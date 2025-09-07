@@ -1,17 +1,15 @@
-import Header from './components/Header';
-import Map from './components/Map';
-import SideBar from './components/SideBar';
-import Legend from './components/Legend';
+import { Route, Routes } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import MapPage from './pages/MapPage';
 
 const App = () => {
 	return (
-		<div>
-			<Header />
-			<Map />
-
-			<SideBar />
-			<Legend />
-		</div>
+		<>
+			<Routes>
+				<Route path="/" element={<LandingPage />} />
+				<Route path="/map" element={<MapPage />} />
+			</Routes>
+		</>
 	);
 };
 export default App;

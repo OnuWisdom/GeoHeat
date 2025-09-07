@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const Header = () => {
 	return (
 		<header className="flex flex-col md:flex-row justify-between items-center bg-white p-4 md:p-5 shadow-md relative z-[1000]">
@@ -8,7 +9,9 @@ const Header = () => {
 					alt="logo"
 					className="h-5 bg-gradient-to-b from-[#E137FF] to-[#872199] p-1 mr-1 rounded-md"
 				/>
-				<p>GeoHeat</p>
+				<Link to="/">
+					<p>GeoHeat</p>
+				</Link>
 				<p className="w-[2px] h-10 bg-[#f0f0f0] mx-[5px] ml-[14px] hidden sm:block"></p>
 				<p className="text-sm hidden sm:block">Store Density Analytics</p>
 			</div>
