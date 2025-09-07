@@ -8,6 +8,7 @@ const App = () => {
 		<div>
 			<Header />
 			<Map />
+
 			<SideBar />
 			<Legend />
 		</div>
