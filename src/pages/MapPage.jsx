@@ -3,10 +3,13 @@ import Map from '../components/Map';
 import SideBar from '../components/SideBar';
 import Legend from '../components/Legend';
 
-const MapPage = () => {
+const MapPage = ({ mapCenter }) => {
 	return (
 		<>
-			<Header />
+			<Header
+			// mapCenter={mapCenter}
+			// onSearchResults={(json) => setLocations(parsePoints(json))}
+			/>
 			<Map />
 			<SideBar />
 			<Legend />
